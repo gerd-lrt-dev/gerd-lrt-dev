@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 500" role="img" aria-label="Engineering, robotics and aerospace simulation banner">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1">
+      <stop offset="0" stop-color="#07111d"/>
+      <stop offset="0.52" stop-color="#0b1726"/>
+      <stop offset="1" stop-color="#07111d"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" x2="1">
+      <stop offset="0" stop-color="#2f81f7" stop-opacity=".15"/>
+      <stop offset=".55" stop-color="#58a6ff" stop-opacity=".05"/>
+      <stop offset="1" stop-color="#f0883e" stop-opacity=".12"/>
+    </linearGradient>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0V44" fill="none" stroke="#8b949e" stroke-opacity=".08" stroke-width="1"/>
+    </pattern>
+    <filter id="soft"><feGaussianBlur stdDeviation="10"/></filter>
+  </defs>
+
+  <rect width="1800" height="500" fill="url(#bg)"/>
+  <rect width="1800" height="500" fill="url(#grid)"/>
+  <rect width="1800" height="500" fill="url(#glow)"/>
+
+  <!-- terrain / rover -->
+  <path d="M0 380 C110 330,210 360,320 312 C410 272,520 310,650 260" fill="none" stroke="#58a6ff" stroke-opacity=".32" stroke-width="2"/>
+  <path d="M0 402 C160 355,270 390,400 340 C500 302,590 320,700 285" fill="none" stroke="#58a6ff" stroke-opacity=".12" stroke-width="1.5"/>
+  <g transform="translate(150 250)" stroke="#c9d1d9" stroke-width="4" fill="none" opacity=".92">
+    <rect x="40" y="35" width="175" height="82" rx="10"/>
+    <rect x="82" y="6" width="58" height="28" rx="5"/>
+    <line x1="111" y1="6" x2="111" y2="-28"/>
+    <circle cx="111" cy="-34" r="10"/>
+    <circle cx="70" cy="125" r="32"/>
+    <circle cx="186" cy="125" r="32"/>
+    <circle cx="70" cy="125" r="13"/>
+    <circle cx="186" cy="125" r="13"/>
+    <line x1="60" y1="54" x2="190" y2="54"/>
+    <circle cx="79" cy="76" r="7" fill="#58a6ff" stroke="none"/>
+    <circle cx="103" cy="76" r="7" fill="#58a6ff" stroke="none"/>
+  </g>
+
+  <!-- coordinate frame -->
+  <g transform="translate(285 255)" stroke-linecap="round" stroke-width="4">
+    <line x1="0" y1="0" x2="0" y2="-92" stroke="#58a6ff"/>
+    <polyline points="-7,-81 0,-94 7,-81" fill="none" stroke="#58a6ff"/>
+    <line x1="0" y1="0" x2="88" y2="-22" stroke="#f85149"/>
+    <polyline points="75,-28 90,-22 79,-12" fill="none" stroke="#f85149"/>
+    <line x1="0" y1="0" x2="66" y2="53" stroke="#3fb950"/>
+    <polyline points="55,42 68,54 51,56" fill="none" stroke="#3fb950"/>
+  </g>
+
+  <!-- trajectory -->
+  <path d="M330 335 C470 250,600 375,735 245 S980 160,1110 258" fill="none" stroke="#c9d1d9" stroke-opacity=".62" stroke-width="2.5" stroke-dasharray="9 10"/>
+  <g fill="#07111d" stroke="#58a6ff" stroke-width="4">
+    <circle cx="520" cy="284" r="10"/><circle cx="735" cy="245" r="10"/><circle cx="941" cy="185" r="10"/>
+  </g>
+
+  <!-- control block diagram -->
+  <g transform="translate(675 128)" fill="none" stroke="#c9d1d9" stroke-opacity=".72" stroke-width="2.5">
+    <circle cx="0" cy="55" r="17"/>
+    <line x1="-17" y1="55" x2="-72" y2="55"/>
+    <line x1="17" y1="55" x2="72" y2="55"/>
+    <rect x="72" y="29" width="92" height="52" rx="4"/>
+    <line x1="164" y1="55" x2="218" y2="55"/>
+    <rect x="218" y="29" width="92" height="52" rx="4"/>
+    <line x1="310" y1="55" x2="382" y2="55"/>
+    <path d="M347 55 V112 H0 V74"/>
+    <line x1="-10" y1="45" x2="10" y2="65"/>
+    <line x1="10" y1="45" x2="-10" y2="65"/>
+  </g>
+
+  <!-- response curves -->
+  <g transform="translate(690 40)" fill="none" stroke-width="2.5">
+    <path d="M0 50 H355" stroke="#8b949e" stroke-opacity=".35"/>
+    <path d="M0 70 V0" stroke="#8b949e" stroke-opacity=".35"/>
+    <path d="M0 50 C45 -8,95 3,128 35 S200 62,245 35 S315 32,355 22" stroke="#58a6ff"/>
+    <path d="M0 50 C75 50,80 2,160 16 S270 34,355 18" stroke="#f0883e" stroke-opacity=".75" stroke-dasharray="8 8"/>
+  </g>
+
+  <!-- orbital mechanics -->
+  <g transform="translate(1215 230)" fill="none" stroke-width="2.4">
+    <ellipse rx="230" ry="95" stroke="#58a6ff" stroke-opacity=".68" transform="rotate(-11)"/>
+    <ellipse rx="178" ry="65" stroke="#f0883e" stroke-opacity=".78" transform="rotate(17)"/>
+    <ellipse rx="126" ry="45" stroke="#c9d1d9" stroke-opacity=".38" stroke-dasharray="8 8" transform="rotate(-25)"/>
+    <circle r="38" fill="#1b2738" stroke="#c9d1d9" stroke-opacity=".75"/>
+    <circle cx="176" cy="-23" r="8" fill="#58a6ff" stroke="none"/>
+    <circle cx="-96" cy="46" r="7" fill="#f0883e" stroke="none"/>
+  </g>
+
+  <!-- lander -->
+  <g transform="translate(1515 225)" fill="none" stroke="#d0d7de" stroke-width="4" opacity=".96">
+    <polygon points="-62,-58 58,-58 78,48 -76,48"/>
+    <polygon points="-42,-92 40,-92 61,-58 -60,-58"/>
+    <line x1="-57" y1="48" x2="-122" y2="126"/>
+    <line x1="57" y1="48" x2="122" y2="126"/>
+    <line x1="-15" y1="48" x2="-38" y2="126"/>
+    <line x1="15" y1="48" x2="38" y2="126"/>
+    <line x1="-145" y1="126" x2="-97" y2="126"/>
+    <line x1="97" y1="126" x2="145" y2="126"/>
+    <line x1="-59" y1="126" x2="-17" y2="126"/>
+    <line x1="17" y1="126" x2="59" y2="126"/>
+    <circle cx="-19" cy="-8" r="14"/>
+    <circle cx="21" cy="-8" r="14"/>
+    <line x1="0" y1="-92" x2="0" y2="-130"/>
+    <circle cx="0" cy="-138" r="8"/>
+  </g>
+
+  <!-- lander axes and rotation -->
+  <g transform="translate(1515 225)" fill="none" stroke-width="4" stroke-linecap="round">
+    <line y1="-40" y2="-155" stroke="#58a6ff"/>
+    <polyline points="-7,-142 0,-157 7,-142" stroke="#58a6ff"/>
+    <line y1="-5" x2="125" y2="-28" stroke="#f85149"/>
+    <polyline points="111,-34 127,-28 116,-17" stroke="#f85149"/>
+    <line y1="4" x2="112" y2="66" stroke="#3fb950"/>
+    <polyline points="100,53 114,67 97,68" stroke="#3fb950"/>
+    <path d="M-88 -88 C-30 -128,59 -120,91 -73" stroke="#c9d1d9" stroke-opacity=".7" stroke-width="2.5"/>
+    <polyline points="80,-78 93,-72 84,-61" stroke="#c9d1d9" stroke-opacity=".7" stroke-width="2.5"/>
+  </g>
+
+  <!-- thrust glow -->
+  <ellipse cx="1515" cy="388" rx="74" ry="18" fill="#f0883e" opacity=".18" filter="url(#soft)"/>
+  <path d="M1491 277 L1515 374 L1539 277" fill="#f0883e" opacity=".18"/>
+
+  <!-- subtle code / math glyphs -->
+  <g fill="#8b949e" opacity=".24" font-family="monospace" font-size="18">
+    <text x="520" y="430">ẋ = f(x,u)</text>
+    <text x="760" y="420">q̇ = ½ Ω(ω) q</text>
+    <text x="1040" y="420">τ = r × F</text>
+    <text x="1295" y="90">ΣF = m·a</text>
+  </g>
+</svg>
