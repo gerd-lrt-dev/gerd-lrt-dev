@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/profile-banner.svg" width="100%" alt="Engineering, robotics and aerospace simulation banner">
+  <img src="assets/Banner.png" width="100%" alt="Engineering, robotics and aerospace simulation banner">
 </p>
 
 <h1 align="center">Gerd Schendzielorz</h1>
